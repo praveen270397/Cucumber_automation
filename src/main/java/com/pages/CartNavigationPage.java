@@ -19,6 +19,7 @@ WebDriver driver;
 	private By Proceed_to_checkout_address =  By.xpath("//button[contains(@name,'processAddress')]/span[contains(text(),'Proceed to checkout')]");
 	private By Agree_terms =  By.xpath("//input[@type='checkbox']");
 	private By Proceed_to_checkout_shipping =  By.xpath("//button[contains(@name,'processCarrier')]/span[contains(text(),'Proceed to checkout')]");
+	private By Proceed_to_checkout_shipping =  By.xpath("//button[contains(@name,'processCdgdgarrier')]/span[contains(text(),'Proceed to checkout')]");
 
 
 	public void proceedToCheckout() {
@@ -47,5 +48,11 @@ WebDriver driver;
 	public void agreeTerms() {
 		 driver.findElement(Agree_terms).click();
 	}
-
+public void proceedToCheckoutShipping() {
+		driver.findElement(Proceed_to_checkout_shipping).click();
+	}
+	
+	public void proceedToCheckoutShipping() {
+		driver.findElement(Proceed_to_checkout_shipping).click();
+	}
 }
